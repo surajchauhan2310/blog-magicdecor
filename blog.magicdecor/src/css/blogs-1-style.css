@@ -1,0 +1,531 @@
+/* Reset CSS starts here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Reset CSS ends here */
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "roboto-light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Bona_nova-regular";
+  src: url("../fonts/Bona_Nova/BonaNova-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bona_nova-bold";
+  src: url("../fonts/Bona_Nova/BonaNova-Bold.ttf");
+}
+@font-face {
+  font-family: "Bona_nova-italic";
+  src: url("../fonts/Bona_Nova/BonaNova-Italic.ttf");
+}
+
+:root {
+  --primary-font-color: #9f1127;
+  --secondary-font-color: #5d5d5d;
+  --tertiary-font-color: #5e5e5e;
+
+  --primary-bg-color: #f9f9f9;
+  --primary-font-family: "Bona_nova-regular";
+  --secondary-font-family: "Bona_nova-bold";
+  --tertiary-font-family: "Bona_nova-italic";
+}
+body {
+  font-family: var(--primary-font-family);
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* margin: 28px 0; */
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+}
+a:hover {
+  color: var(--secondary-font-color);
+}
+.fa {
+  color: var(--primary-font-color);
+  font-weight: bolder;
+}
+/* Hover effect css starts here */
+.img-hover-effect {
+  overflow: hidden;
+}
+.img-hover-effect img {
+  width: 100%;
+  transition: all.4s;
+}
+.img-hover-effect img:hover {
+  transform: scale(1.15);
+  transition: all.4s;
+  cursor: pointer;
+}
+.text-hover-effect:hover {
+  text-decoration: underline;
+  text-decoration-color: #9f1127;
+  transition: 0.4s;
+}
+/* Hover effect css starts here */
+/* Header section css starts here */
+header {
+  background-color: white;
+  border-bottom: 2px solid #f5f5f5;
+}
+header .logo svg {
+  padding: 18px 0px;
+}
+header .logo:hover {
+  cursor: pointer;
+}
+header nav ul {
+  margin: 28px 0;
+}
+header nav ul li {
+  align-self: center;
+}
+header nav ul li a {
+  color: #5e5e5e;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 900;
+}
+header nav ul li:first-child a {
+  color: var(--primary-font-color);
+}
+header nav ul li:hover a {
+  color: var(--primary-font-color);
+}
+header .social-media-handle ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 28px 0;
+}
+header .social-media-handle ul li .fa {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  align-self: center;
+  font-size: 18px;
+}
+header .social-media-handle ul li:hover .fa {
+  color: var(--primary-font-color);
+}
+
+/* Header section css ends here */
+
+/* blogs-bundle section css starts here */
+
+.blogs-bundle {
+  padding: 40px 0 0 0;
+}
+.hero-banner-blog {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+.hero-banner-blog-img {
+  overflow: hidden;
+}
+.hero-banner-blog-img img {
+  width: 100%;
+  transition: all.4s;
+}
+
+.hero-banner-blog-title {
+  padding: 20px 0 10px 0;
+  font-family: var(--secondary-font-family);
+  font-size: 42px;
+  color: var(--secondary-font-color);
+  line-height: 62px;
+  text-align: left;
+  transition: all 0.6s;
+}
+
+hr:not([size]) {
+  height: 2px;
+}
+.hero-banner-blog-desc p {
+  font-size: 16px;
+  color: var(--secondary-font-color);
+  line-height: 22px;
+  text-indent: 60px;
+}
+.hero-banner-blog-footer {
+  padding: 20px 0;
+  font-size: 16px;
+  color: var(--secondary-font-color);
+  line-height: 22px;
+}
+.hero-banner-blog-footer ul li a {
+  color: var(--secondary-font-color);
+}
+
+/* blogs-bundle css ends here */
+/* aside css starts here */
+aside {
+  position: sticky;
+  top: 115px;
+}
+/* top-story section starts here */
+.hero-top-story-card-container {
+  margin: 40px 0 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+.hero-top-story-card-container h4 {
+  /* font-family: var(--secondary-font-color); */
+  text-align: left;
+  font-size: 28px;
+  color: var(--secondary-font-color);
+  font-family: var(--secondary-font-family);
+  padding-bottom: 10px;
+}
+.hero-top-story-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+.story-img {
+  width: 40%;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.story-img img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.story-text {
+  width: 60%;
+  color: var(--secondary-font-color);
+}
+.story-text a h6 {
+  margin-bottom: 8px;
+  font-family: var(--secondary-font-family);
+  font-size: 16px;
+  line-height: 18px;
+  transition: 0.4s;
+  text-decoration-color: #9f1127;
+}
+
+.story-text span {
+  font-size: 14px;
+}
+/* top-story css section ends here */
+
+/* section featured-product css starst here */
+.featured-product-container {
+  margin: 24px 0 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+.featured-product-container h4 {
+  /* text-align: right; */
+  font-size: 28px;
+  color: var(--secondary-font-color);
+  font-family: var(--secondary-font-family);
+  padding-bottom: 10px;
+}
+.product-card {
+  padding: 12px 0;
+}
+.card-img {
+  width: 100%;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+}
+.card-text {
+  font-family: var(--secondary-font-family);
+  font-size: 16px;
+  line-height: 22px;
+  /* text-align: left; */
+  padding: 10px 0;
+  color: var(--secondary-font-color);
+}
+.card-text span {
+  font-family: var(--primary-font-family);
+  padding: 10px 0;
+  color: var(--primary-font-color);
+  /* text-decoration: underline; */
+}
+/* section featured-product ends here */
+
+/* aside css ends here */
+
+/* pagination css starts here*/
+.pagination {
+  margin-top: 40px;
+}
+.page-item a {
+  color: var(--secondary-font-color);
+}
+.page-item a:hover {
+  color: var(--primary-font-color);
+  font-weight: 800;
+}
+
+/* pagination css ends here*/
+
+/* footer section css starts here */
+footer {
+  margin-top: 60px;
+}
+footer .footer-block-one {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+footer .footer-block-one .footer-div ul {
+  padding: 24px 0;
+}
+.footer-div {
+  margin-top: 16px;
+}
+
+.footer-div svg {
+  width: 175px;
+}
+
+.footer-div p {
+  padding: 20px 0 0 0;
+  color: #313131;
+  font-size: 16px;
+  font-family: var(--primary-font-family);
+  line-height: 21px;
+  color: var(--secondary-font-color);
+}
+
+.footer-div h3 {
+  color: #9f1127;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-family: var(--secondary-font-family);
+}
+.footer-div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-div ul li {
+  list-style-type: none;
+  /* justify-content: start; */
+  padding: 8px 0;
+}
+
+.footer-div ul li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  color: var(--secondary-font-color);
+}
+
+.footer-div ul li a:hover {
+  color: #9f1127;
+}
+
+footer ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer-block-two {
+  padding: 12px;
+  background-color: #f5f5f5;
+}
+.footer-block-two-desc {
+  color: #9f1127;
+}
+.footer-block-two-desc p {
+  margin-bottom: 0;
+}
+
+.footer-block-two-desc p a {
+  color: #9f1127;
+  text-decoration: none;
+  text-decoration-color: var(--secondary-font-color);
+}
+
+.footer-block-two-desc p a:hover {
+  text-decoration: underline;
+}
+
+.footer-block-two .footer-payment-method img {
+  height: 22.5px;
+  width: 100%;
+}
+
+.footer-block-two .footer-payment-method ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-block-two .footer-payment-method ul li {
+  list-style-type: none;
+}
+
+.footer-block-two .footer-payment-method ul li:first-child img {
+  height: 13px;
+}
+
+.footer-block-two .footer-payment-method ul li:last-child img {
+  height: 24px;
+  width: 125%;
+}
+/* footer section css ends here */
